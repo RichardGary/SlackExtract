@@ -35,7 +35,7 @@ This will extract all messages and files from each channel the user has access t
 
 See the [Authorization page on the wiki](https://github.com/clr2of8/SlackExtract/wiki/Authorization) for details on obtaining the dCookie or the SlackToken.
 
-## Default Limits
+## Default Limits (each can be changed with optional parameters)
 
 | Limit Parameters        | Default Value   
 | :-------------: |:-------------:
