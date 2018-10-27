@@ -31,6 +31,8 @@ A PowerShell script to extract all messages and files from a User's slack accoun
 
 ## How to Obtain the dCookie and/or the API Token
 
+See the [Authorization page on the wiki](https://github.com/clr2of8/SlackExtract/wiki/Authorization) for details on obtaining the dCookie or the SlackToken.
+
 ## Default Limits
 
 | Limit Parameters        | Default Value   
@@ -40,6 +42,6 @@ A PowerShell script to extract all messages and files from a User's slack accoun
 | MaxUsers  | 100,000
 | MaxAccessLogs* | 1000,0000
 
-* Accessible to Admins of Paid Workspaces Only
+\* Accessible to Admins of Paid Workspaces Only
 
 See the Wiki for additional notes.
