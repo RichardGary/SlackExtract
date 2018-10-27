@@ -58,8 +58,15 @@ Extract the profile of each user, up to the 1000 users as specified by the *MaxU
 
 ## Example 4: Extract Data from Only Specific Channels
 
-Provide a comma separated list of Channel IDs to extract data from. The channel ID can be seen in URL bar of a web browser when connected to a Slack workspace.
+Provide a comma separated list of Channel IDs to extract data from. The channel ID can be seen in URL bar of a web browser when connected to a Slack workspace. You can also exclude specific Channels with the *ExcludeChannelIds* parameter.
 
 ```Invoke-SlackExtract -ChannelIds DD0081E5C,CCC2FCAE4,GD00AAMFY -OutputFolderName my-extraction -SlackUrl https://slackextract.slack.com -SlackToken xoxs-420083410720-421837374423-440811613314-977844f625b707d5b0b268206dbc92cbc85feef3e71b08e44815a8e6e7657190```
+
+## Example 5: Extract Access Logs
+
+Access logs contain the IP address, User Agent and of each user as the connect to the Slack workspace. To extract access logs, the user must be an admin of a paid workspace.
+
+```Invoke-SlackExtract -ExtractAccessLogs -MaxAccessLogs 200 -OutputFolderName my-extraction -SlackUrl https://slackextract.slack.com -SlackToken xoxs-420083410720-421837374423-440811613314-977844f625b707d5b0b268206dbc92cbc85feef3e71b08e44815a8e6e7657190```
+
 
 See the Wiki for additional notes.
