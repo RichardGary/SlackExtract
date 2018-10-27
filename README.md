@@ -48,9 +48,18 @@ See the [Authorization page on the wiki](https://github.com/clr2of8/SlackExtract
 
 ## Example 2: Extract User Profiles
 
-Extract th profile of each user, up to the 1000 users as specified by the *MaxUsers* parameter. The details of each user will me written as individual json files in the *meta/Users* directory. An *all_users.csv* file is also created for easy viewing and sorting of the data in Excel.
+Extract the profile of each user, up to the 1000 users as specified by the *MaxUsers* parameter. The details of each user will be written as individual json files in the *meta/Users* directory. An *all_users.csv* file is also created for easy viewing and sorting of the data in Excel.
 
 ```Invoke-SlackExtract -ExtractUsers -MaxUsers 1000 -OutputFolderName my-extraction -SlackUrl https://slackextract.slack.com -SlackToken xoxs-420083410720-421837374423-440811613314-977844f625b707d5b0b268206dbc92cbc85feef3e71b08e44815a8e6e7657190```
 
+## Example 3: Extract Data from Only Private Channels
+
+```Invoke-SlackExtract -PrivateOnly -OutputFolderName my-extraction -SlackUrl https://slackextract.slack.com -SlackToken xoxs-420083410720-421837374423-440811613314-977844f625b707d5b0b268206dbc92cbc85feef3e71b08e44815a8e6e7657190```
+
+## Example 4: Extract Data from Only Specific Channels
+
+Provide a comma separated list of Channel IDs to extract data from. The channel ID can be seen in URL bar of a web browser when connected to a Slack workspace.
+
+```Invoke-SlackExtract -ChannelIds DD0081E5C,CCC2FCAE4,GD00AAMFY -OutputFolderName my-extraction -SlackUrl https://slackextract.slack.com -SlackToken xoxs-420083410720-421837374423-440811613314-977844f625b707d5b0b268206dbc92cbc85feef3e71b08e44815a8e6e7657190```
 
 See the Wiki for additional notes.
