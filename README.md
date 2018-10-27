@@ -19,7 +19,7 @@ A PowerShell script to extract all messages and files from a User's slack accoun
 2. OutputFolderName (e.g. my-extraction)
 3. dCookie (e.g. wvxP...8%3D)   OR   SlackToken (e.g. xoxs-12...65)
 
-## Example 1: Extract all files and messages from each channel (up to the defualt limits)
+## Example 1: Extract all files and messages from each channel (up to the default limits)
 
 ### Providing the dCookie
 
@@ -33,6 +33,12 @@ A PowerShell script to extract all messages and files from a User's slack accoun
 
 ## Default Limits
 
+| Limit Paramet        | Default Value   
+| :-------------: |:-------------:
+| MaxMessagesPerChannel       | 10,000 
+| MaxFilesPerChannel     | 2,000      
+| MaxUsers  | 100,000
+| MaxAccessLogs* | 1000,0000
 
 
 See the Wiki for additional notes.
