@@ -68,5 +68,6 @@ Access logs contain the IP address, User Agent and of each user as the connect t
 
 ```Invoke-SlackExtract -ExtractAccessLogs -MaxAccessLogs 200 -OutputFolderName my-extraction -SlackUrl https://slackextract.slack.com -SlackToken xoxs-420083410720-421837374423-440811613314-977844f625b707d5b0b268206dbc92cbc85feef3e71b08e44815a8e6e7657190```
 
+## Searching Through the Extracted Data
 
-See the Wiki for additional notes.
+The extracted data is written to files in UTF-16 format. This means that using *grep* to search through the data isn't going to work. Instead, you could use PowerShell to search through the extracted data. See the [Analyzing Extracting Results](https://github.com/clr2of8/SlackExtract/wiki/Analyzing-Extracted-Results) wiki page for helpful hints on doing this with PowerShell.
