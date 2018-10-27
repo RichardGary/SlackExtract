@@ -33,12 +33,13 @@ A PowerShell script to extract all messages and files from a User's slack accoun
 
 ## Default Limits
 
-| Limit Paramet        | Default Value   
+| Limit Parameters        | Default Value   
 | :-------------: |:-------------:
 | MaxMessagesPerChannel       | 10,000 
 | MaxFilesPerChannel     | 2,000      
 | MaxUsers  | 100,000
 | MaxAccessLogs* | 1000,0000
 
+* Accessible to Admins of Paid Workspaces Only
 
 See the Wiki for additional notes.
