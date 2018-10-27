@@ -21,7 +21,7 @@ A PowerShell script to extract all messages and files from a User's slack accoun
 
 ## Example 1: Extract all files and messages
 
-This will extract all messages and files from each channel the user has access to (up to the default limits). The default output location is Document/SlackExtract. A folder will be created for each Channel.
+This will extract all messages and files from each channel the user has access to (up to the default limits). The default output location is Document/SlackExtract. A folder will be created for each Channel [as shown here](https://raw.githubusercontent.com/clr2of8/SlackExtract/master/imgs/BasicUsage.png).
 
 ### Providing the dCookie
 
@@ -48,7 +48,7 @@ See the [Authorization page on the wiki](https://github.com/clr2of8/SlackExtract
 
 ## Example 2: Extract User Profiles
 
-Extract the profile of each user, up to the 1000 users as specified by the *MaxUsers* parameter. The details of each user will be written as individual json files in the *meta/Users* directory. An *all_users.csv* file is also created for easy viewing and sorting of the data in Excel.
+Extract the profile of each user, up to the 1000 users as specified by the *MaxUsers* parameter. The details of each user will be written as individual json files in the *meta/Users* directory. An *all_users.csv* file is also created for easy viewing and sorting of the data in Excel [as shown here](https://raw.githubusercontent.com/clr2of8/SlackExtract/master/imgs/UserProfiles.png).
 
 ```Invoke-SlackExtract -ExtractUsers -MaxUsers 1000 -OutputFolderName my-extraction -SlackUrl https://slackextract.slack.com -SlackToken xoxs-420083410720-421837374423-440811613314-977844f625b707d5b0b268206dbc92cbc85feef3e71b08e44815a8e6e7657190```
 
@@ -64,7 +64,7 @@ Provide a comma separated list of Channel IDs to extract data from. The channel 
 
 ## Example 5: Extract Access Logs
 
-Access logs contain the IP address, User Agent and of each user as the connect to the Slack workspace. To extract access logs, the user must be an admin of a paid workspace.
+Access logs contain the IP address and User Agent of each user as they connect to the Slack workspace [as shown here](https://raw.githubusercontent.com/clr2of8/SlackExtract/master/imgs/AccessLogs.png). To extract access logs, the user must be an admin of a paid workspace.
 
 ```Invoke-SlackExtract -ExtractAccessLogs -MaxAccessLogs 200 -OutputFolderName my-extraction -SlackUrl https://slackextract.slack.com -SlackToken xoxs-420083410720-421837374423-440811613314-977844f625b707d5b0b268206dbc92cbc85feef3e71b08e44815a8e6e7657190```
 
